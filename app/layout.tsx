@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "AliothDigital helps UK organisations compete work through bid and tender management, build teams through recruitment, and grow through digital, software and IT.",
   manifest: "/site.webmanifest",
   icons: {
-    icon: "/icons/favicon.svg",
+    icon: "/icons/alioth.png",
   },
 };
 
