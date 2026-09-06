@@ -1,0 +1,7 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+<footer className="footer"><div className="container"><div className="footer-grid"><div><img alt="AliothDigital Studios" src="/images/alioth-logo.png" /><p>Bid & tender management, recruitment and digital growth for businesses that need the work done properly — with clear ownership and no unnecessary theatre.</p><Link className="btn primary" href="/contact">Start a conversation ↗</Link></div><div><h4>Compete</h4><Link href="/proposal-development">Bid & Tender Management</Link><Link href="/upload-tender">Upload a Tender</Link></div><div><h4>Build</h4><Link href="/recruitment">Recruitment</Link><Link href="/recruitment#staffing">IT Staffing</Link><Link href="/contact?route=recruitment">Hire with Alioth</Link></div><div><h4>Grow</h4><Link href="/digital-marketing">Digital Marketing</Link><Link href="/software-it-services">Software & IT Services</Link><Link href="/web-development">Web & Software</Link><Link href="/ai-solutions">AI & Automation</Link><Link href="/work">Client Work</Link></div></div><div className="footer-bottom"><span>© 2026 Alioth Digital Studios. All rights reserved.</span><span>86–90 Paul Street, London EC2A 4NE · Registered in England No. 14610211 · <a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></span><span><Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <Link href="/accessibility">Accessibility</Link></span></div></div></footer>
+  );
+}
