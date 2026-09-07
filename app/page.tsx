@@ -17,7 +17,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="reveal">
             <span className="eyebrow">
-              London · UK · One partner, three ways forward
+              One partner, three ways forward
             </span>
             <h1>
               Compete.<span>Build.</span>Grow.
@@ -37,8 +37,8 @@ export default function Home() {
               </button>
             </div>
             <div className="signature-line">
-              <span>Proposal · Recruitment · Digital</span>
-              <span>86–90 Paul Street · London EC2A</span>
+              <span>Bid · Recruitment · Digital</span>
+              {/* <span>86–90 Paul Street · London EC2A</span> */}
             </div>
           </div>
           <div className="hero-side reveal">
@@ -280,6 +280,9 @@ export default function Home() {
           >
             <div className="sector-track">
               <div className="sector reveal">
+                <b>NHS</b>
+              </div>
+              <div className="sector reveal">
                 <b>Civil Design</b>
               </div>
               <div className="sector reveal">
@@ -290,6 +293,9 @@ export default function Home() {
               </div>
               <div className="sector reveal">
                 <b>Facilities Programme Management</b>
+              </div>
+              <div className="sector reveal">
+                <b>NHS</b>
               </div>
               <div className="sector" aria-hidden="true">
                 <b>Civil Design</b>

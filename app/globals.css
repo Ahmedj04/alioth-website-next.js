@@ -1199,7 +1199,7 @@ body {
 .sector {
   padding: 26px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, .5);
+  /* background: rgba(255, 255, 255, .5); */
   min-height: 190px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1210,7 +1210,8 @@ body {
   display: block;
   font-family: var(--display);
   font-size: 1.15rem;
-  letter-spacing: -.03em
+  letter-spacing: -.03em;
+  color: var(--navy-deep);
 }
 
 .sector span {
