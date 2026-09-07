@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Bid & Tender Management | AliothDigital",
   description:
     "UK bid and tender management covering tender analysis, proposal development, response writing, compliance, QA and submission readiness.",
-  alternates: { canonical: "/proposal-development" },
+  alternates: { canonical: "/bid-development" },
   robots: "index,follow",
 };
 
-export default function ProposalDevelopmentPage() {
+export default function BidDevelopmentPage() {
   return (
     <>
       <section className="page-hero">
