@@ -2883,10 +2883,6 @@ body {
 
 @media(max-width:800px) {
 
-  .navlinks {
-    display: none
-  }
-
   .three-paths,
   .feature-grid,
   .process,
@@ -3253,24 +3249,6 @@ body {
 }
 
 @media(max-width:800px) {
-  .mobile-open .navlinks {
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 72px;
-    background: rgba(4, 9, 13, .98);
-    border: 1px solid var(--line);
-    box-shadow: var(--shadow);
-    padding: 8px 10px 18px;
-    flex-direction: column;
-    align-items: stretch;
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-    overflow: auto;
-    max-height: calc(100vh - 86px)
-  }
 
   .mobile-open .navlinks>a,
   .mobile-open .navdrop>button {
@@ -3539,10 +3517,6 @@ body {
     transform: translateX(102%);
     transition: transform .45s var(--ease);
     z-index: 100
-  }
-
-  body.mobile-open .navlinks {
-    transform: none
   }
 
   .navlinks>a,
@@ -4210,10 +4184,6 @@ body {
     overflow-x: hidden;
     background: var(--paper);
   }
-
-  body.mobile-open {
-    overscroll-behavior: none;
-  }
   .topline {
     display: none
   }
@@ -4878,10 +4848,6 @@ body {
 }
 
 @media (max-width:560px) {
-  .mobile-open .navlinks {
-    padding-left: 12px;
-    padding-right: 12px
-  }
 
   .dropdown.mega-menu .mega-intro {
     padding: 18px 15px 15px !important
@@ -4965,14 +4931,10 @@ body {
     padding-bottom: calc(28px + env(safe-area-inset-bottom)) !important
   }
 
-  body.mobile-open {
-    overflow: hidden !important;
-    touch-action: none
-  }
-
-  body.mobile-open .navlinks {
+  /* React adds .mobile-open directly to <nav>. */
+  .navlinks.mobile-open {
     transform: translateX(0) !important;
-    visibility: visible !important
+    visibility: visible !important;
   }
   .navdrop>button:after,
   .mobile-open .navdrop>button:after {
@@ -5263,20 +5225,6 @@ body {
 }
 
 @media (max-width:980px) {
-  .mobile-open .navlinks {
-    background: linear-gradient(180deg, var(--navy-deep) 0%, #000E20 100%) !important;
-    padding: 88px 14px calc(28px + env(safe-area-inset-bottom));
-    gap: 4px
-  }
-
-  body.mobile-open:after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: #000E20;
-    z-index: 4999;
-    pointer-events: none
-  }
 
   .dropdown.mega-menu .mega-intro .kicker {
     display: inline-flex;
