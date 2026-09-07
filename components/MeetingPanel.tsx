@@ -1,59 +1,120 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function MeetingPanel() {
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
-    const body = document.body;
-    const meeting = document.querySelector("#meetingPanel");
-    let lastFocus: HTMLElement | null = null;
+    const handleClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
 
-    function openMeeting() {
-      if (!meeting) return;
-      lastFocus = document.activeElement as HTMLElement | null;
-      meeting.classList.add("open");
-      meeting.setAttribute("aria-hidden", "false");
-      body.classList.add("no-scroll");
-      (meeting.querySelector(".close") as HTMLElement | null)?.focus();
-    }
+      if (target.closest("[data-meeting]")) {
+        setOpen(true);
+      }
 
-    function closeMeeting() {
-      if (!meeting) return;
-      meeting.classList.remove("open");
-      meeting.setAttribute("aria-hidden", "true");
-      body.classList.remove("no-scroll");
-      lastFocus?.focus?.();
-    }
+      if (target.closest("[data-close-meeting]")) {
+        setOpen(false);
+      }
 
-    const openers = document.querySelectorAll("[data-meeting]");
-    const closers = document.querySelectorAll("[data-close-meeting]");
+      if (target.id === "meetingPanel") {
+        setOpen(false);
+      }
+    };
 
-    openers.forEach((b) => b.addEventListener("click", openMeeting));
-    closers.forEach((b) => b.addEventListener("click", closeMeeting));
-
-    const onBackdrop = (e: Event) => { if (e.target === meeting) closeMeeting(); };
-    meeting?.addEventListener("click", onBackdrop);
+    document.addEventListener("click", handleClick);
 
     return () => {
-      openers.forEach((b) => b.removeEventListener("click", openMeeting));
-      closers.forEach((b) => b.removeEventListener("click", closeMeeting));
-      meeting?.removeEventListener("click", onBackdrop);
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.body.classList.toggle("no-scroll", open);
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [open]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
   return (
-    <div aria-hidden="true" className="meeting-panel" id="meetingPanel">
+    <div
+      aria-hidden={!open}
+      className={`meeting-panel${open ? " open" : ""}`}
+      id="meetingPanel"
+    >
       <div className="meeting-card">
-        <button aria-label="Close" className="close" data-close-meeting="">×</button>
+        <button
+          aria-label="Close"
+          className="close"
+          data-close-meeting=""
+          type="button"
+        >
+          ×
+        </button>
+
         <span className="kicker">Start a meeting</span>
-        <h2 className="title">What would you like to talk about?</h2>
-        <p className="muted">You don't need to know the right service. Tell us what is happening and we'll help you find the route.</p>
+
+        <h2 className="title">
+          What would you like to talk about?
+        </h2>
+
+        <p className="muted">
+          You don't need to know the right service. Tell us what is happening
+          and we'll help you find the route.
+        </p>
+
         <div className="meeting-options">
-          <Link className="meeting-option" href="/contact?route=proposal"><b>COMPETE</b><span>I have a tender, ITT, RFP or proposal.</span></Link>
-          <Link className="meeting-option" href="/contact?route=recruitment"><b>BUILD</b><span>I need to hire someone.</span></Link>
-          <Link className="meeting-option" href="/contact?route=grow"><b>GROW</b><span>I need digital or marketing help.</span></Link>
-          <Link className="meeting-option" href="/contact?route=just-talk"><b>JUST TALK</b><span>I'm figuring it out and want a conversation.</span></Link>
+          <Link
+            className="meeting-option"
+            href="/contact?route=proposal"
+            onClick={() => setOpen(false)}
+          >
+            <b>COMPETE</b>
+            <span>I have a tender, ITT, RFP or proposal.</span>
+          </Link>
+
+          <Link
+            className="meeting-option"
+            href="/contact?route=recruitment"
+            onClick={() => setOpen(false)}
+          >
+            <b>BUILD</b>
+            <span>I need to hire someone.</span>
+          </Link>
+
+          <Link
+            className="meeting-option"
+            href="/contact?route=grow"
+            onClick={() => setOpen(false)}
+          >
+            <b>GROW</b>
+            <span>I need digital or marketing help.</span>
+          </Link>
+
+          <Link
+            className="meeting-option"
+            href="/contact?route=just-talk"
+            onClick={() => setOpen(false)}
+          >
+            <b>JUST TALK</b>
+            <span>I'm figuring it out and want a conversation.</span>
+          </Link>
         </div>
       </div>
     </div>
