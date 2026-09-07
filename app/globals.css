@@ -186,7 +186,7 @@ body {
   gap: 10px;
   text-transform: uppercase;
   letter-spacing: .16em;
-  font-size: .72rem;
+  font-size: .62rem;
   font-weight: 800;
   color: var(--orange)
 }
@@ -5026,6 +5026,43 @@ body {
     margin-right: 12px !important;
   }
 }
+
+/* ================================
+   BOOKING / CALENDLY
+================================ */
+
+.booking-section {
+  overflow: hidden;
+}
+
+.booking-header {
+  max-width: 720px;
+  margin-bottom: 45px;
+}
+
+.booking-header .title {
+  margin-bottom: 18px;
+}
+
+.booking-header .muted {
+  max-width: 620px;
+}
+
+.calendly-wrapper {
+  width: 100%;
+  min-height: 700px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.calendly-wrapper iframe {
+  display: block;
+  width: 100% !important;
+  min-height: 700px;
+  border: 0;
+}
+
 @media (max-width: 768px) {
   .booking-header {
     margin-bottom: 30px;
