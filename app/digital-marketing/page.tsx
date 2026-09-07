@@ -14,14 +14,16 @@ export default function DigitalMarketingPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <nav className="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
+          <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span
             aria-hidden="true">/</span><span>Digital Marketing</span></nav>
         </div>
         <div className="container"><span className="eyebrow">GROW · Digital, Software &amp; IT Marketing</span>
           <h1>Be easier to find.</h1>
           <p>SEO, content, paid campaigns, analytics and digital marketing built around the customer journey.</p>
-          <div className="hero-actions"><a className="btn primary" href="contact.html">Talk about your project →</a><button
-            className="btn ghost" data-meeting="">Start a meeting ↗</button></div>
+          <div className="hero-actions">
+            <Link href="/contact" className="btn primary">Talk about your project →</Link>
+            <button className="btn ghost" data-meeting="">Start a meeting ↗</button>
+          </div>
         </div>
       </section>
       <section className="section">
