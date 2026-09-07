@@ -131,23 +131,24 @@ export default function Header() {
                 type="button"
                 aria-expanded={servicesOpen}
                 aria-haspopup="true"
+                aria-controls="services-menu"
                 onClick={handleServicesClick}
               >
-                Services
+                <span>Services</span>
                 <span className="nav-chevron" aria-hidden="true"></span>
               </button>
 
-              <div className="dropdown mega-menu" role="menu">
-
+              <div
+                id="services-menu"
+                className="dropdown mega-menu"
+                role="menu"
+                aria-hidden={!servicesOpen}
+              >
                 <div className="mega-intro">
                   <span className="kicker">How we help</span>
-
                   <h3>
-                    Three routes.
-                    <br />
-                    <em>One team.</em>
+                    Three routes. <em>One team.</em>
                   </h3>
-
                   <p>
                     Choose the outcome first. We will help you work out the
                     route, the next step and the right level of support.
@@ -165,29 +166,20 @@ export default function Header() {
                 <div className="mega-group compete">
                   <span className="mega-index">01</span>
                   <span className="mega-label">COMPETE</span>
-
-                  <h4>Bid & Tender Management</h4>
-
+                  <h4>Bid &amp; Tender Management</h4>
                   <p>
                     Make the opportunity easier to understand, shape and
                     submit.
                   </p>
 
-                  <Link
-                    href="/proposal-development"
-                    onClick={closeMenus}
-                  >
-                    <strong>Bid & tender management</strong>
+                  <Link href="/proposal-development" onClick={closeMenus}>
+                    <strong>Bid &amp; tender management</strong>
                     <small>
                       Opportunity review · response development · compliance ·
                       QA
                     </small>
                   </Link>
-
-                  <Link
-                    href="/upload-tender"
-                    onClick={closeMenus}
-                  >
+                  <Link href="/upload-tender" onClick={closeMenus}>
                     <strong>Upload a tender</strong>
                     <small>
                       Send the pack and deadline. Start with the opportunity.
@@ -198,19 +190,14 @@ export default function Header() {
                 <div className="mega-group build">
                   <span className="mega-index">02</span>
                   <span className="mega-label">BUILD</span>
-
-                  <h4>Recruitment & Talent</h4>
-
+                  <h4>Recruitment &amp; Talent</h4>
                   <p>
                     Find capable people without turning recruitment into CV
                     volume.
                   </p>
 
-                  <Link
-                    href="/recruitment"
-                    onClick={closeMenus}
-                  >
-                    <strong>Recruitment & IT staffing</strong>
+                  <Link href="/recruitment" onClick={closeMenus}>
+                    <strong>Recruitment &amp; IT staffing</strong>
                     <small>
                       Sourcing · screening · technical capability · placement
                     </small>
@@ -220,94 +207,53 @@ export default function Header() {
                 <div className="mega-group grow">
                   <span className="mega-index">03</span>
                   <span className="mega-label">GROW</span>
-
-                  <h4>Digital, Software & IT</h4>
-
+                  <h4>Digital, Software &amp; IT</h4>
                   <p>
                     Practical digital capability for businesses that want to
                     move forward.
                   </p>
 
                   <div className="mega-links">
-
                     <Link
-                      href="/digital-marketing"
-                      onClick={closeMenus}
+                      href="/digital-marketing" onClick={closeMenus}
                     >
                       <strong>Digital marketing</strong>
                       <small>SEO · content · campaigns</small>
                     </Link>
-
-                    <Link
-                      href="/web-development"
-                      onClick={closeMenus}
-                    >
-                      <strong>Web & software</strong>
+                    <Link href="/web-development" onClick={closeMenus}>
+                      <strong>Web &amp; software</strong>
                       <small>Websites · platforms · integrations</small>
                     </Link>
-
-                    <Link
-                      href="/ai-solutions"
-                      onClick={closeMenus}
-                    >
-                      <strong>AI & automation</strong>
+                    <Link href="/ai-solutions" onClick={closeMenus}>
+                      <strong>AI &amp; automation</strong>
                       <small>Useful systems, not AI theatre</small>
                     </Link>
-
-                    <Link
-                      href="/software-it-services"
-                      onClick={closeMenus}
-                    >
-                      <strong>Software & IT services</strong>
+                    <Link href="/software-it-services" onClick={closeMenus}>
+                      <strong>Software &amp; IT services</strong>
                       <small>Support · systems · maintenance</small>
                     </Link>
-
-                    <Link
-                      href="/graphic-design"
-                      onClick={closeMenus}
-                    >
-                      <strong>Creative & content</strong>
+                    <Link href="/graphic-design" onClick={closeMenus}>
+                      <strong>Creative &amp; content</strong>
                       <small>Brand · design · video</small>
                     </Link>
-
                   </div>
                 </div>
 
                 <div className="mega-footer">
                   <span>Not sure what you need?</span>
-
-                  <Link
-                    href="/contact?route=just-talk"
-                    onClick={closeMenus}
-                  >
+                  <Link href="/contact?route=just-talk" onClick={closeMenus}>
                     Just talk to us <span>↗</span>
                   </Link>
                 </div>
-
               </div>
             </div>
 
-            <Link href="/work" onClick={closeMenus}>
-              Work
-            </Link>
+            <Link href="/work" onClick={closeMenus}>Work</Link>
+            <Link href="/about" onClick={closeMenus}>About</Link>
+            <Link href="/insights" onClick={closeMenus}>Insights</Link>
+            <Link href="/contact" onClick={closeMenus}>Contact</Link>
 
-            <Link href="/about" onClick={closeMenus}>
-              About
-            </Link>
-
-            <Link href="/insights" onClick={closeMenus}>
-              Insights
-            </Link>
-
-            <Link href="/contact" onClick={closeMenus}>
-              Contact
-            </Link>
-
-            <Link
-              className="navcta"
-              href="/contact"
-              onClick={closeMenus}
-            >
+            <Link className="navcta" href="/contact" onClick={closeMenus}>
               Start a conversation <span>↗</span>
             </Link>
           </nav>
