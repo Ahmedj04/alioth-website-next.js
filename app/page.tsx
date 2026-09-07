@@ -29,7 +29,7 @@ export default function Home() {
               practically and without the sales maze.
             </p>
             <div className="hero-actions">
-              <Link className="btn primary" href="/proposal-development">
+              <Link className="btn primary" href="/bid-development">
                 Explore COMPETE ↗
               </Link>
               <button className="btn ghost" data-meeting>
@@ -78,7 +78,7 @@ export default function Home() {
             </p>
           </div>
           <div className="three-paths">
-            <Link className="path reveal" href="/proposal-development">
+            <Link className="path reveal" href="/bid-development">
               <span className="path-num">01 · COMPETE</span>
               <div>
                 <h3>Compete the work.</h3>
@@ -147,13 +147,13 @@ export default function Home() {
                   <p>Bid & Tender Management</p>
                 </div>
                 <div className="branch-leaves">
-                  <Link href="/proposal-development">Tender analysis</Link>
-                  <Link href="/proposal-development">Proposal development</Link>
-                  <Link href="/proposal-development">
+                  <Link href="/bid-development">Tender analysis</Link>
+                  <Link href="/bid-development">Proposal development</Link>
+                  <Link href="/bid-development">
                     Tender response writing
                   </Link>
-                  <Link href="/proposal-development">Compliance & QA</Link>
-                  <Link href="/proposal-development">
+                  <Link href="/bid-development">Compliance & QA</Link>
+                  <Link href="/bid-development">
                     Bid planning & submission
                   </Link>
                   <Link href="/upload-tender">Upload a Tender ↗</Link>
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-actions" style={{ marginTop: "28px" }}>
-            <Link className="btn dark" href="/proposal-development">
+            <Link className="btn dark" href="/bid-development">
               See proposal services ↗
             </Link>
             <Link className="btn ghost dark" href="/upload-tender">

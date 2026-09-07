@@ -40,12 +40,12 @@ const nextConfig: NextConfig = {
       // Old bid-tender.html redirect stub, preserved from the original .htaccess/_redirects
       {
         source: "/bid-tender.html",
-        destination: "/proposal-development",
+        destination: "/bid-development",
         permanent: true,
       },
       {
         source: "/bid-tender",
-        destination: "/proposal-development",
+        destination: "/bid-development",
         permanent: true,
       },
     ];

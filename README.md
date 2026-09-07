@@ -39,7 +39,7 @@ npm run start
 - `public/images`, `public/icons` — the original image/icon assets.
 - `next.config.ts` — 301 redirects from every old `/page.html` URL to its new
   clean route (e.g. `/about.html` → `/about`), the `bid-tender.html` →
-  `/proposal-development` redirect from the original `_redirects` file, and
+  `/bid-development` redirect from the original `_redirects` file, and
   the same security headers that were in the original `.htaccess`/`_headers`.
 
 ## Routes
@@ -52,7 +52,7 @@ npm run start
 | `/services.html`                | `/services`                  |
 | `/work.html`                    | `/work`                      |
 | `/insights.html`                | `/insights`                  |
-| `/proposal-development.html`    | `/proposal-development`      |
+| `/bid-development.html`    | `/bid-development`      |
 | `/upload-tender.html`           | `/upload-tender`             |
 | `/recruitment.html`             | `/recruitment`                |
 | `/digital-marketing.html`       | `/digital-marketing`          |
@@ -67,7 +67,7 @@ npm run start
 | `/terms.html`                   | `/terms`                      |
 | `/accessibility.html`           | `/accessibility`              |
 | `/thank-you.html`               | `/thank-you`                  |
-| `/bid-tender.html`              | `/proposal-development`       |
+| `/bid-tender.html`              | `/bid-development`       |
 | `/404.html`                     | handled by `app/not-found.tsx`|
 
 All old `.html` URLs 301-redirect to the new routes automatically (see

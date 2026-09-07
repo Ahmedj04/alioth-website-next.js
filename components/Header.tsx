@@ -172,7 +172,7 @@ export default function Header() {
                     submit.
                   </p>
 
-                  <Link href="/proposal-development" onClick={closeMenus}>
+                  <Link href="/bid-development" onClick={closeMenus}>
                     <strong>Bid &amp; tender management</strong>
                     <small>
                       Opportunity review · response development · compliance ·

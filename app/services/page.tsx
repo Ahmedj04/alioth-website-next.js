@@ -33,7 +33,7 @@ export default function ServicesPage() {
 
   <div className="route-tree">
     <div className="tree-stem" aria-hidden="true"></div>
-    <Link className="route-card compete reveal" href="/proposal-development">
+    <Link className="route-card compete reveal" href="/bid-development">
       <span className="route-number">01</span><span className="route-word">COMPETE</span>
       <div><span className="route-tag">Proposal & Bid Management</span><h3>Turn a tender into a response people can score.</h3><p>Opportunity review, bid/no-bid support, tender analysis, response development, compliance mapping, evidence, review and submission readiness.</p><span className="card-link">Explore COMPETE ↗</span></div>
     </Link>
@@ -41,10 +41,10 @@ export default function ServicesPage() {
       <span className="route-number">02</span><span className="route-word">BUILD</span>
       <div><span className="route-tag">Recruitment & Talent</span><h3>Bring the right capability into the room.</h3><p>Focused sourcing, screening and IT staffing for teams that care about capability, fit and pace.</p><span className="card-link">Explore BUILD ↗</span></div>
     </Link>
-    <a className="route-card grow reveal" href="#grow">
+    <Link className="route-card grow reveal" href="#grow">
       <span className="route-number">03</span><span className="route-word">GROW</span>
       <div><span className="route-tag">Digital, Software & IT</span><h3>Make your digital operation earn its place.</h3><p>Marketing, websites, software, AI, IT support and creative — connected rather than scattered.</p><span className="card-link">Explore GROW ↓</span></div>
-    </a>
+    </Link>
   </div>
 </div>
 </section>
