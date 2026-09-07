@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import RoutePreselect from "@/components/RoutePreselect";
 
 export const metadata: Metadata = {
   title: "Contact AliothDigital | London",
@@ -20,6 +22,7 @@ export default function ContactPage() {
         <p>Bring a tender, a role, a website problem or the question you are trying to answer. We'll take it from there.
         </p>
       </div><button className="btn ghost" data-meeting="">Start a meeting ↗</button>
+      <Suspense fallback={null}><RoutePreselect /></Suspense>
     </section>
     <section className="section">
       <div className="container" style={{display: 'grid', gridTemplateColumns: '.75fr 1.25fr', gap: '70px'}}>

@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import MeetingPanel from "@/components/MeetingPanel";
-import SiteScripts from "@/components/SiteScripts";
+import PageEffects from "@/components/PageEffects";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aliothdigital.com"),
@@ -50,7 +50,7 @@ export default function RootLayout({
         <CookieBanner />
         <MeetingPanel />
         <Suspense fallback={null}>
-          <SiteScripts />
+          <PageEffects />
         </Suspense>
       </body>
     </html>

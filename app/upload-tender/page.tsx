@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import TenderFileInput from "@/components/TenderFileInput";
 
 export const metadata: Metadata = {
   title: "Upload a Tender | AliothDigital",
@@ -91,6 +92,7 @@ export default function UploadTenderPage() {
               <input id="tenderFile" name="attachment" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.zip" required />
               <div className="file-note" id="fileName">PDF, DOC, DOCX, XLS, XLSX or ZIP · max 15 MB.</div>
             </div>
+            <TenderFileInput />
             <button className="btn dark" type="submit">Send the tender ↗</button>
             <p className="muted" style={{ fontSize: '.74rem' }}>Please only upload material you are authorised to share. Do not send
               classified material or sensitive personal data. By submitting, you agree that AliothDigital can use the
