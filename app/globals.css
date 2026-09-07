@@ -489,6 +489,14 @@ body {
   top: calc(100% + 12px)
 }
 
+/* Force-close mega menu during route navigation */
+.navdrop.closing .dropdown.mega-menu {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translate(-50%, 8px) !important;
+  pointer-events: none !important;
+}
+
 .dropdown.mega-menu .mega-intro,
 .dropdown.mega-menu .mega-group {
   padding: 27px 24px 24px

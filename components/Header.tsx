@@ -26,7 +26,12 @@ export default function Header() {
 
     function closeServices() {
       serviceDrop?.classList.remove("open");
+      serviceDrop?.classList.add("closing");
       serviceButton?.setAttribute("aria-expanded", "false");
+
+      window.setTimeout(() => {
+        serviceDrop?.classList.remove("closing");
+      }, 300);
     }
 
     function closeMenu() {
@@ -51,11 +56,23 @@ export default function Header() {
     if (serviceButton && serviceDrop) {
       on(serviceButton, "click", (e) => {
         e.preventDefault();
+
+        // Remove closing state if user opens it again
+        serviceDrop.classList.remove("closing");
+
         const open = !serviceDrop.classList.contains("open");
+
         serviceDrop.classList.toggle("open", open);
         serviceButton.setAttribute("aria-expanded", String(open));
       });
     }
+
+    // Close mega-menu immediately when navigating to a service
+    serviceDrop?.querySelectorAll("a").forEach((link) => {
+      on(link, "click", () => {
+        closeServices();
+      });
+    });
 
     serviceDrop?.querySelectorAll(".mega-group").forEach((group) => {
       const handler = (e: Event) => {
