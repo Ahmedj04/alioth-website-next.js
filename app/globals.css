@@ -231,17 +231,6 @@ body {
   position: relative
 }
 
-.navdrop>button:after {
-  content: "⌄";
-  font-size: .9rem;
-  transition: transform .2s
-}
-
-.navdrop:hover>button:after,
-.navdrop.open>button:after {
-  transform: rotate(180deg)
-}
-
 .dropdown .drop-label {
   display: block;
   padding: 9px 14px 5px;
@@ -250,11 +239,6 @@ body {
   letter-spacing: .16em;
   text-transform: uppercase;
   font-weight: 900
-}
-
-.navdrop.open .nav-chevron,
-.navdrop:hover .nav-chevron {
-  transform: rotate(225deg) translate(-1px, -1px)
 }
 
 .dropdown a strong {
@@ -312,12 +296,10 @@ body {
   border-color: rgba(21, 25, 24, .12)
 }
 
-.navdrop:hover .dropdown,
-.navdrop:focus-within .dropdown,
 .navdrop.open .dropdown {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 .dropdown a {
@@ -412,8 +394,8 @@ body {
   font-size: .9rem
 }
 
-.navdrop.open .nav-chevron {
-  transform: rotate(180deg)
+.navdrop.open .nav-chevron{
+  transform: rotate(225deg) translate(-1px, -1px)
 }
 
 .navcta {
@@ -506,10 +488,10 @@ body {
   grid-column: 1/-1
 }
 
-.navdrop:hover .dropdown.mega-menu,
-.navdrop:focus-within .dropdown.mega-menu,
 .navdrop.open .dropdown.mega-menu {
-  transform: translate(-50%, 0)
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
 }
 
 .topline,
