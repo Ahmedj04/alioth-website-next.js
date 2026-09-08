@@ -32,9 +32,9 @@ export default function PrivacyPage() {
             tender-upload information.
           </p>
           <div className="hero-actions">
-            <Link href="#book-meeting" className="btn ghost">
+            <button className="btn ghost" data-meeting>
               Start a meeting ↗
-            </Link>
+            </button>
           </div>
         </div>
       </section>

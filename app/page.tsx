@@ -39,7 +39,6 @@ export default function Home() {
             </div>
             <div className="signature-line">
               <span>Bid · Recruitment · Digital</span>
-              {/* <span>86–90 Paul Street · London EC2A</span> */}
             </div>
           </div>
           <div className="hero-side reveal">

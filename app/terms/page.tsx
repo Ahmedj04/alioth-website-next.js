@@ -29,9 +29,9 @@ export default function TermsPage() {
           </h1>
           <p>Website terms for AliothDigital Studios.</p>
           <div className="hero-actions">
-            <Link href="#book-meeting" className="btn ghost">
+            <button className="btn ghost" data-meeting>
               Start a meeting ↗
-            </Link>
+            </button>
           </div>
         </div>
         
