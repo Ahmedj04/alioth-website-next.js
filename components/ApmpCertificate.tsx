@@ -26,7 +26,7 @@ export default function ApmpCertificate({className, style}: ApmpCertificateProps
                             to ensure evaluation-focused, compliant submissions.
                         </p>
                         <div className="apmp-points">
-                            <span>Verified proposal processes</span>
+                            <span>Verified bid processes</span>
                             <span>•</span>
                             <span>Evidence-based scoring logic</span>
                             <span>•</span>

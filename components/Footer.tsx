@@ -41,11 +41,11 @@ export default function Footer() {
           <span>
             86–90 Paul Street, London EC2A 4NE · Registered in England No.
             14610211 ·{" "}
-            <a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a>
+            <Link href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</Link>
           </span>
           <span>
-            <Link href="/privacy">Privacy</Link> ·{" "}
-            <Link href="/terms">Terms</Link> ·{" "}
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
             <Link href="/accessibility">Accessibility</Link>
           </span>
         </div>
