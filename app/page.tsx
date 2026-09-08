@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ApmpCertificate from "@/components/ApmpCertificate";
 
 export const metadata: Metadata = {
   title:
@@ -313,6 +314,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container">
           <div className="upload-box reveal">
@@ -520,6 +522,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ApmpCertificate className="section " style={{backgroundColor: "white"}}/>
 
       <section className="section paper2">
         <div className="container">

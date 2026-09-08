@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ApmpCertificate from "@/components/ApmpCertificate";
 
 export const metadata: Metadata = {
   title: "Bid & Tender Management | AliothDigital",
@@ -42,6 +43,9 @@ export default function BidDevelopmentPage() {
           </div>
         </div>
       </section>
+
+      <ApmpCertificate className="section paper2"/>
+
       <section className="section">
         <div className="container service-layout">
           <div className="service-sticky">
