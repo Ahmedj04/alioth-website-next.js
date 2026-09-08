@@ -35,11 +35,12 @@ export default function ContactPage() {
             Bring a tender, a role, a website problem or the question you are
             trying to answer. We'll take it from there.
           </p>
+          <div className="hero-actions">
+            <Link href="#book-meeting" className="btn ghost">
+              Start a meeting ↗
+            </Link>
+          </div>
         </div>
-
-        <a href="#book-meeting" className="btn ghost">
-          Start a meeting ↗
-        </a>
 
         <Suspense fallback={null}>
           <RoutePreselect />

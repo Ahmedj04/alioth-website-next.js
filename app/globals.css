@@ -5098,6 +5098,86 @@ body {
   }
 }
 
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  margin-top: 50px;
+  padding-top: 22px;
+  color: #7f8b91;
+  font-size: .67rem;
+  line-height: 1.5;
+}
+
+.footer-bottom > span {
+  min-width: 0;
+}
+
+.footer-bottom > span:nth-child(2) {
+  text-align: center;
+}
+
+.footer-bottom > span:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-bottom a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  color: #d7dfe2;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.footer-bottom a:hover {
+  color: var(--cyan);
+}
+
+
+/* ========================================
+   FOOTER BOTTOM — MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-bottom > span:nth-child(2),
+  .footer-bottom > span:nth-child(3) {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-bottom > span:nth-child(3) {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-bottom {
+    font-size: .64rem;
+    gap: 10px;
+  }
+
+  .footer-bottom > span:nth-child(3) {
+    gap: 10px;
+  }
+}
 
 /* APMP CERTIFICATE */
 .apmp-spotlight-inner {

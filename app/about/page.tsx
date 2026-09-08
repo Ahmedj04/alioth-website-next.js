@@ -33,10 +33,12 @@ export default function AboutPage() {
             simple idea: useful work starts with understanding the problem, not
             pushing a package.
           </p>
+          <div className="hero-actions">
+            <button className="btn ghost" data-meeting="">
+              Start a meeting ↗
+            </button>
+          </div>
         </div>
-        <button className="btn ghost" data-meeting="">
-          Start a meeting ↗
-        </button>
       </section>
       <section className="section">
         <div className="container service-layout">

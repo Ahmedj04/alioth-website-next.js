@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Work & Client Projects | AliothDigital",
-  description: "Selected digital, software and creative work delivered by AliothDigital for UK and international clients.",
+  description:
+    "Selected digital, software and creative work delivered by AliothDigital for UK and international clients.",
   alternates: { canonical: "/work" },
   robots: "index,follow",
 };
@@ -11,7 +12,177 @@ export const metadata: Metadata = {
 export default function WorkPage() {
   return (
     <>
-<section className="page-hero"><div className="container"><nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><span>Work</span></nav></div><div className="container"><span className="eyebrow">Selected work</span><h1>Real problems.<br /><span className="accent">Thoughtful solutions.</span></h1><p>Existing client work gives our digital practice its proof. Proposal and recruitment are newer offers, so we will add those case studies as real work is completed and approved for publication.</p></div><button className="btn ghost" data-meeting="">Start a meeting ↗</button></section><section className="section"><div className="container"><div className="work-grid"><article className="case large reveal" id="medecon"><div className="visual"><div className="mock"><strong>MEDECON</strong><p>Biomedical equipment specialist</p><small>Responsive · SEO · service showcase</small></div></div><div className="case-body"><span className="meta">Healthcare · Website</span><h3>Medecon</h3><p>A responsive, SEO-optimised website explaining biomedical engineering services, equipment, refurbishment, decommissioning and 24/7 support.</p><div className="case-meta"><span>Website · UI/UX · SEO</span><span>Result: stronger service clarity</span></div></div></article><div className="case-stack"><article className="case reveal"><div className="visual"><div className="mock"><strong>BKMA</strong><p>Membership organisation</p></div></div><div className="case-body"><span className="meta">Membership · Support</span><h3>BKMA</h3><p>Website maintenance, payment integration, event support and video content. Reported outcomes included 99.9% uptime and a 50% increase in online membership renewals.</p></div></article><article className="case reveal"><div className="visual"><div className="mock"><strong>SMART FLOW</strong><p>Industrial engineering</p></div></div><div className="case-body"><span className="meta">B2B · Engineering</span><h3>Smart Flow Engineering</h3><p>Service-led website structure, SEO and quote-request UX for equipment, calibration, automation and systems integration.</p></div></article></div></div></div></section><section className="section paper2"><div className="container"><div className="feature-grid"><div className="feature reveal"><strong>DocAcquire</strong><span>Marketing collateral and video content for a B2B document management software business.</span></div><div className="feature reveal"><strong>Centennial Workshop</strong><span>WooCommerce, branding, product video, SEO and digital growth for an established e-commerce brand.</span></div><div className="feature reveal"><strong>Bonny Arts</strong><span>E-commerce, brand identity and digital support for an online art marketplace.</span></div><div className="feature reveal"><strong>eventezi</strong><span>Website, ticketing, brand and digital marketing for an event management platform.</span></div></div></div></section><section className="section"><div className="container"><div className="section-head"><div><span className="kicker">More proof</span><h2 className="title">The details matter.</h2></div><p>Where clients have approved specific outcomes, we show them. We do not manufacture proposal or recruitment case studies before the work exists.</p></div><div className="stat-strip"><div className="stat"><b>99.9%</b><span>Reported BKMA uptime</span></div><div className="stat"><b>50%</b><span>Reported membership renewal increase</span></div><div className="stat"><b>180%</b><span>Reported online sales increase</span></div><div className="stat"><b>200%</b><span>Reported website traffic increase</span></div></div></div></section><section className="section dark"><div className="container"><span className="kicker">Next project</span><h2 className="title">Let's create the next case study together.</h2><p style={{color: '#aeb9bf'}}>Tell us what you are trying to achieve — proposal, recruitment or digital.</p><Link className="btn primary" href="/contact">Start a conversation →</Link></div></section>
+      <section className="page-hero">
+        <div className="container">
+          <nav className="breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span aria-hidden="true">/</span>
+            <span>Work</span>
+          </nav>
+        </div>
+        <div className="container">
+          <span className="eyebrow">Selected work</span>
+          <h1>
+            Real problems.
+            <br />
+            <span className="accent">Thoughtful solutions.</span>
+          </h1>
+          <p>
+            Existing client work gives our digital practice its proof. Proposal
+            and recruitment are newer offers, so we will add those case studies
+            as real work is completed and approved for publication.
+          </p>
+          <div className="hero-actions">
+            <button className="btn ghost" data-meeting="">
+              Start a meeting ↗
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <section className="section">
+        <div className="container">
+          <div className="work-grid">
+            <article className="case large reveal" id="medecon">
+              <div className="visual">
+                <div className="mock">
+                  <strong>MEDECON</strong>
+                  <p>Biomedical equipment specialist</p>
+                  <small>Responsive · SEO · service showcase</small>
+                </div>
+              </div>
+              <div className="case-body">
+                <span className="meta">Healthcare · Website</span>
+                <h3>Medecon</h3>
+                <p>
+                  A responsive, SEO-optimised website explaining biomedical
+                  engineering services, equipment, refurbishment,
+                  decommissioning and 24/7 support.
+                </p>
+                <div className="case-meta">
+                  <span>Website · UI/UX · SEO</span>
+                  <span>Result: stronger service clarity</span>
+                </div>
+              </div>
+            </article>
+            <div className="case-stack">
+              <article className="case reveal">
+                <div className="visual">
+                  <div className="mock">
+                    <strong>BKMA</strong>
+                    <p>Membership organisation</p>
+                  </div>
+                </div>
+                <div className="case-body">
+                  <span className="meta">Membership · Support</span>
+                  <h3>BKMA</h3>
+                  <p>
+                    Website maintenance, payment integration, event support and
+                    video content. Reported outcomes included 99.9% uptime and a
+                    50% increase in online membership renewals.
+                  </p>
+                </div>
+              </article>
+              <article className="case reveal">
+                <div className="visual">
+                  <div className="mock">
+                    <strong>SMART FLOW</strong>
+                    <p>Industrial engineering</p>
+                  </div>
+                </div>
+                <div className="case-body">
+                  <span className="meta">B2B · Engineering</span>
+                  <h3>Smart Flow Engineering</h3>
+                  <p>
+                    Service-led website structure, SEO and quote-request UX for
+                    equipment, calibration, automation and systems integration.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section paper2">
+        <div className="container">
+          <div className="feature-grid">
+            <div className="feature reveal">
+              <strong>DocAcquire</strong>
+              <span>
+                Marketing collateral and video content for a B2B document
+                management software business.
+              </span>
+            </div>
+            <div className="feature reveal">
+              <strong>Centennial Workshop</strong>
+              <span>
+                WooCommerce, branding, product video, SEO and digital growth for
+                an established e-commerce brand.
+              </span>
+            </div>
+            <div className="feature reveal">
+              <strong>Bonny Arts</strong>
+              <span>
+                E-commerce, brand identity and digital support for an online art
+                marketplace.
+              </span>
+            </div>
+            <div className="feature reveal">
+              <strong>eventezi</strong>
+              <span>
+                Website, ticketing, brand and digital marketing for an event
+                management platform.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <span className="kicker">More proof</span>
+              <h2 className="title">The details matter.</h2>
+            </div>
+            <p>
+              Where clients have approved specific outcomes, we show them. We do
+              not manufacture proposal or recruitment case studies before the
+              work exists.
+            </p>
+          </div>
+          <div className="stat-strip">
+            <div className="stat">
+              <b>99.9%</b>
+              <span>Reported BKMA uptime</span>
+            </div>
+            <div className="stat">
+              <b>50%</b>
+              <span>Reported membership renewal increase</span>
+            </div>
+            <div className="stat">
+              <b>180%</b>
+              <span>Reported online sales increase</span>
+            </div>
+            <div className="stat">
+              <b>200%</b>
+              <span>Reported website traffic increase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section dark">
+        <div className="container">
+          <span className="kicker">Next project</span>
+          <h2 className="title">Let's create the next case study together.</h2>
+          <p style={{ color: "#aeb9bf" }}>
+            Tell us what you are trying to achieve — proposal, recruitment or
+            digital.
+          </p>
+          <Link className="btn primary" href="/contact">
+            Start a conversation →
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
